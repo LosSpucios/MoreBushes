@@ -18,6 +18,10 @@ public class ModTooltipHandler {
             event.getToolTip().add(1, Component.literal("Speed (0:03)").withStyle(ChatFormatting.BLUE));
         }
 
+        if (event.getItemStack().getItem() == Items.CHORUS_FRUIT) {
+            event.getToolTip().add(1, Component.literal("Chorus Effect").withStyle(ChatFormatting.BLUE));
+        }
+
         if (event.getItemStack().getItem() == ModItems.CHORUSBERRIES.get()) {
             event.getToolTip().add(1, Component.literal("Chorus Effect II").withStyle(ChatFormatting.BLUE));
         }
